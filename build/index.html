@@ -76,13 +76,54 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__content container">
+            <a class="footer__logo logo" tabindex="0">
+              <img src="img/svg/logo.svg" width="89" height="20" alt="логотип фитнес центра Supergym.">
+            </a>
+          <!-- <nav class="footer__navigation"> -->
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#"></a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Услуги</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Абонементы</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Акции</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренеры</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Расписание</a></li>
+            </ul>
+          <!-- </nav> -->
+          <section class="footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="25" height="25" viewBox="0 0 25 25"  xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#vk-footer"></use>
+                  </svg>
+                  <span class="visually-hidden">вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="25" height="25" viewBox="0 0 25 25"  xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#ok-footer"></use>
+                  </svg>
+                  <span class="visually-hidden">одноклассники</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#reddit-footer"></use>
+                  </svg>
+                  <span class="visually-hidden">reddit</span></a>
+              </li>
+
+            </ul>
+          </section>
+        </div>
       </footer>
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -108,7 +149,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

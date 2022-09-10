@@ -1,0 +1,77 @@
+.pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 77px 65px;
+  background-color: $color-default-white;
+
+  h3 {
+    color: $color-default-black;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  div {
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    opacity: 0.47;
+    color: $color-price-grey;
+  }
+
+  span {
+    color: $color-price;
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 700;
+    margin-bottom: 29px;
+    padding-left: 10px;
+    margin-top: -98px;
+  }
+
+  u {
+    font-family: $ff-rouble;
+    color: $color-default-black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 60px;
+  }
+
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 206px;
+
+    color: $color-default-black;
+    background: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid $color-default-black;
+    padding-top: 24px;
+    padding-bottom: 23px;
+
+    cursor: pointer;
+  }
+
+  &_active {
+    button {
+      color: $color-default-white;
+      background: $button-gradient;
+      border: none;
+      padding-top: 26px;
+    }
+  }
+}
+

@@ -32,12 +32,10 @@
                   <li class="header__item">Групповые занятия</li>
                   <li class="header__item">Кардио-зона</li>
                 </ul>
-                <button class="header__button">Купить абонемент</button>
+                <button class="header__button btn">Купить абонемент</button>
             </div>
 
           <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/athlete-mobile@1x.webp 1x, img/athlete-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/athlete-tablet@1x.webp 1x, img/athlete-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1200px)"
@@ -70,8 +68,8 @@
           <div class="gym__text-wrap">
             <h2 class="gym__title">Тренажерный&nbsp;зал</h2>
             <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p class="gym__text gym__text_second">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+            <p class="gym__text">Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p class="gym__text gym__text_second">В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
           </div>
           <div class="gym__visual-wrap">
           <picture>
@@ -94,12 +92,57 @@
             <button class="gym__button-play">
               <img src="img/play.png" width="100" height="100" alt="включить видео">
             </button>
-
             <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-
         </div>
-
+        </section>
+        <section class="membership">
+          <div class="membership__inner container">
+            <h2 class="membership__title">Абонементы</h2>
+            <ul class="membership__tabs-list">
+              <li class="membership__tab"><button class="membership__button membership__button_active btn btn_dark">1&nbspмесяц</button></li>
+              <li class="membership__tab"><button class="membership__button btn btn_dark">6&nbsp;месяцев</button></li>
+              <li class="membership__tab"><button class="membership__button btn btn_dark">12&nbsp;месяцев</button></li>
+            </ul>
+            <ul class="membership__options-list">
+              <li class="membership__options-item">
+                <article class="pass">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div>5000</div>
+                  <span>5000&nbsp;<u>i</u></span>
+                  <button>купить абонемент</button>
+                </article>
+              </li>
+              <li class="membership__options-item">
+                <article class="pass pass_active">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <div>1700</div>
+                  <span>1700&nbsp;<u>i</u></span>
+                  <button>купить абонемент</button>
+                </article>
+              </li>
+              <li class="membership__options-item">
+                <article class="pass">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <div>2700</div>
+                  <span>2700&nbsp;<u>i</u></span>
+                  <button>купить абонемент</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/weight-plate-tablet@1x.webp 1x, img/weight-plate-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/weight-plate-desktop@1x.webp 1x, img/weight-plate-desktop@2x.webp 2x">
+            <!-- 1х: 287px; 2x: 574px -->
+            <img width="321" height="384" src="img/weight-plate-desktop@1x.jpg"
+              srcset="img/weight-plate-desktop@2x.jpg 2x" alt="атлет.">
+          </picture>
         </section>
       </main>
       <footer class="footer">

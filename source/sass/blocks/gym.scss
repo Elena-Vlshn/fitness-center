@@ -1,7 +1,7 @@
 .gym {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 235px;
+  padding-bottom: 0;
   display: grid;
   grid-template-columns: 2fr 3fr;
   column-gap: 60px;
@@ -27,7 +27,7 @@
 }
 
 .gym__text-wrap {
-  padding-top: 30px;
+  padding-top: 28px;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
   font-size: 18px;
   line-height: 27px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @include vp-1199 {
     margin-bottom: 34px;
@@ -110,7 +110,7 @@
 
 .gym__video-wrap {
   grid-column: 2/3;
-  transform: translate(-63px, -116px);
+  transform: translate(-63px, -115px);
   position: relative;
   justify-self: start;
 

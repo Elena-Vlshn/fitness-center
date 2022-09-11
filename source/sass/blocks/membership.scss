@@ -1,15 +1,37 @@
 .membership {
   background-color: $color-background-grey;
   padding-top: 120px;
-  padding-bottom: 250px;
+  padding-bottom: 240px;
   margin-top: 6px;
 
   img {
-    margin-left: auto;
-    margin-top: -220px;
+    position: absolute;
+    right: -9%;
+    bottom: -270px;
     width: 287px;
     height: 492px;
     object-fit: contain;
+  }
+
+  @include vp-1199 {
+    padding-top: 102px;
+    padding-bottom: 200px;
+
+    img {
+      width: 345px;
+      height: 455px;
+      right: -46px;
+      bottom: -232px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 68px;
+    padding-bottom: 68px;
+
+    img {
+      display: none;
+    }
   }
 }
 
@@ -17,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .membership__title {
@@ -27,6 +50,18 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 32px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 19px;
+  }
 }
 
 .membership__tabs-list {
@@ -37,11 +72,32 @@
   padding: 0;
   margin-bottom: 40px;
   box-shadow: inset 0 -2px 0 0 rgba(120, 120, 120, 0.2);
+
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 36px;
+  }
 }
 
 .membership__tab {
   &:not(:last-child) {
     margin-right: 48px;
+  }
+
+  @include vp-1199 {
+    &:not(:last-child) {
+      margin-right: 54px;
+    }
+  }
+
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
   }
 }
 
@@ -61,9 +117,23 @@
     border-bottom: 2px solid $border-red;
     opacity: 1;
   }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 12px;
+  }
 }
 
 .membership__options-list {
+  width: 100%;
+  max-width: 100%;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -71,4 +141,19 @@
   margin: 0;
   padding: 0;
   z-index: 2;
+
+  @include vp-1199 {
+    width: 65%;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  @include vp-767 {
+    row-gap: 34px;
+  }
 }
+
+// .membership__options-item {
+//   display: flex;
+//   width: 100%;
+// }

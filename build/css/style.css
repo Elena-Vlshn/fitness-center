@@ -1068,13 +1068,14 @@ button,
 .membership {
   background-color: #f8f9fc;
   padding-top: 120px;
-  padding-bottom: 250px;
+  padding-bottom: 240px;
   margin-top: 6px;
 }
 
 .membership img {
-  margin-left: auto;
-  margin-top: -220px;
+  position: absolute;
+  right: -9%;
+  bottom: -270px;
   width: 287px;
   height: 492px;
   -o-object-fit: contain;
@@ -1092,6 +1093,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .membership__title {
@@ -1142,6 +1144,8 @@ button,
 }
 
 .membership__options-list {
+  width: 100%;
+  max-width: 100%;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -1166,7 +1170,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 56px 77px 65px;
+  border: 7px solid transparent;
+  padding: 48px 25px 62px;
   background-color: #ffffff;
 }
 
@@ -1190,8 +1195,7 @@ button,
   font-size: 100px;
   line-height: 150px;
   font-weight: 700;
-  opacity: 0.47;
-  color: #e8e8e8;
+  color: rgba(232, 232, 232, 0.48);
 }
 
 .pass span {
@@ -1212,7 +1216,7 @@ button,
   font-size: 60px;
 }
 
-.pass button {
+.pass a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1222,24 +1226,30 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 206px;
+  width: 207px;
   color: #102654;
   background: transparent;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border: 2px solid #102654;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-bottom: 23px;
   cursor: pointer;
 }
 
-.pass_active button {
+.pass:hover {
+  -o-border-image: -o-linear-gradient(top left, #d10a42 17.6%, #00359f 99.31%);
+  border-image: -webkit-gradient(linear, left top, right bottom, color-stop(17.6%, #d10a42), color-stop(99.31%, #00359f));
+  border-image: linear-gradient(to bottom right, #d10a42 17.6%, #00359f 99.31%);
+  border-image-slice: 1;
+}
+
+.pass:hover a {
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
-  padding-top: 26px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1340,7 +1350,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding-top: 100px;
-    padding-bottom: 180px;
+    padding-bottom: 10px;
   }
 
   .gym img {
@@ -1351,7 +1361,7 @@ button,
     width: 100%;
     padding: 0;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   .gym__title {
@@ -1375,12 +1385,12 @@ button,
 
   .gym__video-wrap {
     grid-column: 1/-1;
-    -webkit-transform: translate(0, -48%);
-    -ms-transform: translate(0, -48%);
-    transform: translate(0, -48%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     -ms-grid-column-align: center;
     justify-self: center;
-    width: 40%;
+    width: 39%;
   }
 
   .gym__visual-wrap {
@@ -1390,6 +1400,65 @@ button,
   .gym__button-play {
     width: 73px;
     height: 73px;
+  }
+
+  .membership {
+    padding-top: 102px;
+    padding-bottom: 200px;
+  }
+
+  .membership img {
+    width: 345px;
+    height: 455px;
+    right: -46px;
+    bottom: -232px;
+  }
+
+  .membership__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 26px;
+  }
+
+  .membership__tabs-list {
+    margin-bottom: 44px;
+  }
+
+  .membership__tab:not(:last-child) {
+    margin-right: 54px;
+  }
+
+  .membership__button {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+
+  .membership__options-list {
+    width: 65%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .pass {
+    padding: 58px 110px 66px;
+  }
+
+  .pass span {
+    margin-bottom: 28px;
+  }
+
+  .pass a {
+    padding-bottom: 25px;
+  }
+
+  .pass_active {
+    padding: 52px 109px 60px;
+  }
+
+  .pass_active a {
+    padding-bottom: 24px;
   }
 }
 
@@ -1532,7 +1601,7 @@ button,
   }
 
   .gym {
-    padding: 70px 0 40px;
+    padding: 70px 0 66px;
   }
 
   .gym__text-wrap {
@@ -1578,5 +1647,78 @@ button,
 
   .gym__visual-wrap {
     padding-bottom: 98%;
+  }
+
+  .membership {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .membership img {
+    display: none;
+  }
+
+  .membership__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 19px;
+  }
+
+  .membership__tabs-list {
+    margin-bottom: 36px;
+  }
+
+  .membership__tab:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .membership__button {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 12px;
+  }
+
+  .membership__options-list {
+    row-gap: 34px;
+  }
+
+  .pass {
+    width: 100%;
+    padding: 50px 20px 54px;
+  }
+
+  .pass h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .pass p {
+    margin-bottom: 10px;
+  }
+
+  .pass div {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .pass span {
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: -77px;
+    padding-left: 12px;
+    margin-bottom: 26px;
+  }
+
+  .pass u {
+    font-size: 48px;
+  }
+
+  .pass_active {
+    padding: 44px 34px 48px;
+  }
+
+  .pass_active a {
+    padding-bottom: 24px;
   }
 }

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 77px 65px;
+  border: 7px solid transparent;
+  padding: 48px 25px 62px;
   background-color: $color-default-white;
 
   h3 {
@@ -25,7 +26,6 @@
     font-size: 100px;
     line-height: 150px;
     font-weight: 700;
-    opacity: 0.47;
     color: $color-price-grey;
   }
 
@@ -47,11 +47,11 @@
     font-size: 60px;
   }
 
-  button {
+  a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 206px;
+    width: 207px;
 
     color: $color-default-black;
     background: transparent;
@@ -59,18 +59,80 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border: 2px solid $color-default-black;
-    padding-top: 24px;
+    padding-top: 23px;
     padding-bottom: 23px;
 
     cursor: pointer;
   }
 
-  &_active {
-    button {
+  &:hover {
+    border-image: $border-gradient;
+    border-image-slice: 1;
+
+    a {
       color: $color-default-white;
       background: $button-gradient;
       border: none;
-      padding-top: 26px;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 58px 110px 66px;
+
+    span {
+      margin-bottom: 28px;
+    }
+
+    a {
+      padding-bottom: 25px;
+    }
+
+    &_active {
+      padding: 52px 109px 60px;
+
+      a {
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 50px 20px 54px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    div {
+      font-size: 80px;
+      line-height: 120px;
+    }
+
+    span {
+      font-size: 48px;
+      line-height: 72px;
+      margin-top: -77px;
+      padding-left: 12px;
+      margin-bottom: 26px;
+    }
+
+    u {
+      font-size: 48px;
+    }
+
+    &_active {
+      padding: 44px 34px 48px;
+
+      a {
+        padding-bottom: 24px;
+      }
     }
   }
 }

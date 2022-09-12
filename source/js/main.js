@@ -5,6 +5,31 @@ import {initModals} from './modules/modals/init-modals';
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  const tabButtons = document.querySelectorAll('.membership__button');
+  const tabBodies = document.querySelectorAll('.membership__options-list');
+
+  function tabOpen(event) {
+    const dataTabActiveName = event.target.dataset.tab;
+    const bodyTabActive = document.querySelector(`ul[data-tab="${dataTabActiveName}"]`);
+
+    for (let button of tabButtons) {
+      if (button.classList.contains('membership__button_active')) {
+        button.classList.remove('membership__button_active');
+      }
+      for (let tabBody of tabBodies) {
+        tabBody.classList.remove('membership__options-list_show');
+      }
+    }
+    event.target.classList.add('membership__button_active');
+    bodyTabActive.classList.add('membership__options-list_show');
+  }
+
+
+  for (let button of tabButtons) {
+    button.addEventListener('click', tabOpen);
+  }
+
+
   // Utils
   // ---------------------------------
 

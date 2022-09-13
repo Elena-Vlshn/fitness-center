@@ -1,0 +1,61 @@
+.trainer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: $color-background-blue-opacity;
+  padding: 51px 13% 54px;
+  color: $color-default-white;
+
+  h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 34px;
+    margin-top: -4px;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 37px;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-default-white;
+      position: absolute;
+      left: 20px;
+      top: 7px;
+    }
+
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 42px 15px;
+  }
+}
+

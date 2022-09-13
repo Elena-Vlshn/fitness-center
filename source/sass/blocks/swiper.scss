@@ -1,0 +1,59 @@
+.swiper {
+  width: 85%;
+
+  @include vp-1199 {
+    width: 74%;
+  }
+
+  @include vp-767 {
+    width: 71%;
+  }
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-button-prev {
+  background-image: url("../../img/button-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  margin-left: 2%;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-1199 {
+    margin-left: 4%;
+  }
+
+  @include vp-767 {
+    background-size: 10px 19px;
+    margin-left: -3px;
+  }
+}
+
+.swiper-button-next {
+  background-image: url("../../img/button-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  margin-right: 2%;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-1199 {
+    margin-right: 4%;
+  }
+
+  @include vp-767 {
+    background-size: 10px 19px;
+    margin-right: -3px;
+  }
+
+}
+

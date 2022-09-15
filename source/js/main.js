@@ -29,7 +29,18 @@ window.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', tabOpen);
   }
 
-  const swiper = new Swiper('.swiper', {
+  const swiper2 = new Swiper('.swiper-review', {
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+
+  const swiper1 = new Swiper('.swiper', {
     // Default parameters
     slidesPerView: 4,
     spaceBetween: 40,
@@ -58,6 +69,15 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // const swiper = new Swiper('.swiper-review', {
+  //   loop: true,
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
 
 
   // Utils

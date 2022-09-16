@@ -23,3 +23,37 @@
     margin-top: 140px;
   }
 }
+
+.contacts__title {
+  font-family: $ff-bebasneue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 39px;
+
+  &_form {
+    color: $color-default-white;
+    margin-bottom: 42px;
+  }
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 32px;
+
+    &_form {
+      margin-bottom: 37px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 32px;
+
+    &_form {
+      margin-bottom: 36px;
+    }
+  }
+}

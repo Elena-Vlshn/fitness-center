@@ -1919,19 +1919,24 @@ button,
   padding: 72px 102px 46px;
 }
 
-.address {
-  width: 460px;
-  font-style: normal;
-  color: #102654;
-}
-
-.address__title {
+.contacts__title {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 39px;
+}
+
+.contacts__title_form {
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.address {
+  width: 460px;
+  font-style: normal;
+  color: #102654;
 }
 
 .address__wrap {
@@ -1984,16 +1989,6 @@ button,
 
 .form {
   width: 410px;
-}
-
-.form h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 42px;
-  color: #ffffff;
 }
 
 .form ul {
@@ -2508,14 +2503,18 @@ button,
     margin-top: 140px;
   }
 
-  .address {
-    width: 100%;
-  }
-
-  .address__title {
+  .contacts__title {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 32px;
+  }
+
+  .contacts__title_form {
+    margin-bottom: 37px;
+  }
+
+  .address {
+    width: 100%;
   }
 
   .address__wrap {
@@ -2549,12 +2548,6 @@ button,
 
   .form {
     width: 100%;
-  }
-
-  .form h2 {
-    font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 37px;
   }
 
   .form li:not(:last-child) {
@@ -3039,10 +3032,14 @@ button,
     padding-right: 15px;
   }
 
-  .address__title {
+  .contacts__title {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 32px;
+  }
+
+  .contacts__title_form {
+    margin-bottom: 36px;
   }
 
   .address__wrap {
@@ -3058,12 +3055,6 @@ button,
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-  }
-
-  .form h2 {
-    font-size: 32px;
-    line-height: 32px;
-    margin-bottom: 36px;
   }
 
   .form ul {

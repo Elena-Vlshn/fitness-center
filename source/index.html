@@ -94,14 +94,14 @@
             <button class="gym__button-play">
               <img src="img/play.png" width="100" height="100" alt="включить видео">
             </button>
-            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
         <section class="membership">
           <div class="membership__inner container">
             <h2 class="membership__title title">Абонементы</h2>
             <ul class="membership__tabs-list">
-              <li class="membership__tab"><button class="membership__button membership__button_active btn btn_dark" data-tab="1">1&nbspмесяц</button></li>
+              <li class="membership__tab"><button class="membership__button membership__button_active btn btn_dark" data-tab="1">1&nbsp;месяц</button></li>
               <li class="membership__tab"><button class="membership__button btn btn_dark" data-tab="6">6&nbsp;месяцев</button></li>
               <li class="membership__tab"><button class="membership__button btn btn_dark" data-tab="12">12&nbsp;месяцев</button></li>
             </ul>
@@ -201,6 +201,7 @@
               <img width="321" height="384" src="img/weight-plate-desktop@1x.jpg"
                 srcset="img/weight-plate-desktop@2x.jpg 2x" alt="блины для штанги.">
             </picture>
+          </div>
         </section>
         <section class="announcement container">
           <div class="announcement__wrap-text">
@@ -238,7 +239,7 @@
           </div>
         </section>
         <section class="trainers">
-          <h1 class="trainers__title container title">Тренеры</h1>
+          <h2 class="trainers__title container title">Тренеры</h2>
           <div class="swiper-container">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -553,51 +554,50 @@
             <div class="swiper-button-prev swiper-button-prev_review"></div>
             <div class="swiper-button-next swiper-button-next_review"></div>
           </div>
-
-        </section>
         </section>
         <section class="contacts">
-          <form class=" contacts__form form">
-            <h2>бесплатное занятие</h2>
-            <ul>
-              <li>
-                <label class="visually-hidden" for="name">имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" required>
-              </li>
-              <li>
-                <label class="visually-hidden" for="phone">номер телефона</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-              </li>
-            </ul>
-            <button type="submit">отправить</button>
-          </form>
-          <address class="contacts__address address">
-            <h2 class="address__title">Контакты</h2>
-            <div class="address__wrap">
-              <div class="address__elem-wrap">
-                <p class="address__label">Адрес:</p>
-                <p class="address__text">г. Омск, ул.&nbsp;60 лет&nbsp;Октября,&nbsp;7</p>
+          <div class="contacts__form">
+            <h2 class="contacts__title contacts__title_form">бесплатное занятие</h2>
+            <form class="form">
+              <!-- <h2>бесплатное занятие</h2> -->
+              <ul>
+                <li>
+                  <label class="visually-hidden" for="name">имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя" required>
+                </li>
+                <li>
+                  <label class="visually-hidden" for="phone">номер телефона</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                </li>
+              </ul>
+              <button type="submit">отправить</button>
+            </form>
+          </div>
+          <div class="contacts__address">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="address">
+              <div class="address__wrap">
+                <div class="address__elem-wrap">
+                  <p class="address__label">Адрес:</p>
+                  <p class="address__text">г. Омск, ул.&nbsp;60 лет&nbsp;Октября,&nbsp;7</p>
+                </div>
+                <div class="address__elem-line"></div>
+                <div class="address__elem-wrap address__elem-wrap_link">
+                  <p class="address__label">Телефон:</p>
+                  <a class="address__phone" href="tel:+88005555555">8-800-555-55-55</a>
+                </div>
+                <div class="address__elem-wrap">
+                  <p class="address__label">График работы:</p>
+                  <p class="address__text">Пн-Вс: с&nbsp;8:00&nbsp;до&nbsp;22:00</p>
+                </div>
+                <div class="address__elem-wrap address__elem-wrap_link">
+                  <p class="address__label">Email:</p>
+                  <a class="address__mail" href="mailto:article@auth.or">omsk@supergym.ru</a>
+                </div>
               </div>
-              <div class="address__elem-line"></div>
-              <div class="address__elem-wrap address__elem-wrap_link">
-                <p class="address__label">Телефон:</p>
-                <a class="address__phone" href="tel:+88005555555">8-800-555-55-55</a>
-              </div>
-              <div class="address__elem-wrap">
-                <p class="address__label">График работы:</p>
-                <p class="address__text">Пн-Вс: с&nbsp;8:00&nbsp;до&nbsp;22:00</p>
-              </div>
-              <div class="address__elem-wrap address__elem-wrap_link">
-                <p class="address__label">Email:</p>
-                <a class="address__mail" href="mailto:article@auth.or">omsk@supergym.ru</a>
-              </div>
-            </div>
-          </address>
+            </address>
+          </div>
         </section>
-
-
-
-      </div>
       </main>
       <footer class="footer">
         <div class="footer__content container">
@@ -643,37 +643,6 @@
       </footer>
     </div>
 
-
-<!-- 1х: 260px; 2x: 520px -->
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="js/vendor.min.js"></script>

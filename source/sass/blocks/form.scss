@@ -1,0 +1,100 @@
+.form {
+  width: 410px;
+
+  h2 {
+    font-family: $ff-bebasneue;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 42px;
+    color: $color-default-white;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  input {
+    background-color: $color-background-middle-blue;
+    border: none;
+    border-bottom: 1px solid $color-border-grey;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 100%;
+
+    &::placeholder {
+      color: $color-default-white;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  li {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+
+  button {
+    width: 100%;
+    border: 3px solid $color-default-white;
+    background-color: transparent;
+    color: $color-default-white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 16px;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+
+
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 37px;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 56px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 36px;
+    }
+
+    ul {
+      flex-direction: column;
+      margin-bottom: 4px;
+    }
+
+    li {
+      margin-bottom: 35px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    input {
+      padding-bottom: 6px;
+      padding-left: 1px;
+    }
+  }
+}

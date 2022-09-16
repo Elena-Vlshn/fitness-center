@@ -23,20 +23,22 @@
   }
 
   a {
+    align-self: start;
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
-    text-decoration: underline;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-top: auto;
+    border-bottom: 1px solid $color-background-blue;
   }
 
   &_red {
     background-color: $color-background-red;
     border: none;
     color: $color-default-white;
-    padding: 40px 45px 42px;
+    padding: 40px 45px 45px;
 
     h3 {
       font-size: 28px;
@@ -61,8 +63,9 @@
 
     a {
       font-size: 14px;
-      line-height: 26px;
+      line-height: 21px;
       margin-top: auto;
+      border-color: $color-default-white;
     }
   }
 

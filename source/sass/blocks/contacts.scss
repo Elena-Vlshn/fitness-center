@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  background: linear-gradient(to right, $color-background-middle-blue 50%, $color-default-white 50%);
+  padding: 72px 102px 46px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    background: linear-gradient(to bottom, $color-background-middle-blue 48%, $color-default-white 48%);
+    padding: 70px  160px 42px 132px;
+  }
+
+  @include vp-767 {
+    background: linear-gradient(to bottom, $color-background-middle-blue 43.5%, $color-default-white 43.5%);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contacts__address {
+  @include vp-1199 {
+    margin-top: 140px;
+  }
+}

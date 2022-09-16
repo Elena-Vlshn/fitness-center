@@ -247,7 +247,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-1-desktop@1x.webp 1x, img/instructor-1-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-1-desktop@1x.jpg"
                         srcset="img/instructor-1-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -268,7 +268,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-2-desktop@1x.webp 1x, img/instructor-2-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-2-desktop@1x.jpg"
                         srcset="img/instructor-2-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -289,7 +289,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-2-desktop@1x.webp 1x, img/instructor-2-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-2-desktop@1x.jpg"
                         srcset="img/instructor-2-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -311,7 +311,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-4-desktop@1x.webp 1x, img/instructor-4-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-4-desktop@1x.jpg"
                         srcset="img/instructor-4-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -332,7 +332,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-1-desktop@1x.webp 1x, img/instructor-1-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-1-desktop@1x.jpg"
                         srcset="img/instructor-1-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -353,7 +353,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-2-desktop@1x.webp 1x, img/instructor-2-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-2-desktop@1x.jpg"
                         srcset="img/instructor-2-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -374,7 +374,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-2-desktop@1x.webp 1x, img/instructor-2-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-2-desktop@1x.jpg"
                         srcset="img/instructor-2-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -396,7 +396,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
                         srcset="img/instructor-4-desktop@1x.webp 1x, img/instructor-4-desktop@2x.webp 2x">
-
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img width="260" height="294" src="img/instructor-4-desktop@1x.jpg"
                         srcset="img/instructor-4-desktop@2x.jpg 2x" alt="фотография тренера." loading="lazy">
                     </picture>
@@ -418,7 +418,6 @@
             <div class="swiper-button-next"></div>
           </div>
         </section>
-
         <section class="advantages">
           <h2 class="advantages__title title">Наши преимущества</h2>
           <ul class="advantages__list">
@@ -514,7 +513,6 @@
             </li>
           </ul>
         </section>
-
         <section class="reviews">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="swiper-review-container">
@@ -557,6 +555,44 @@
           </div>
 
         </section>
+        </section>
+        <section class="contacts">
+          <form class=" contacts__form form">
+            <h2>бесплатное занятие</h2>
+            <ul>
+              <li>
+                <label class="visually-hidden" for="name">имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+              </li>
+              <li>
+                <label class="visually-hidden" for="phone">номер телефона</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              </li>
+            </ul>
+            <button type="submit">отправить</button>
+          </form>
+          <address class="contacts__address address">
+            <h2 class="address__title">Контакты</h2>
+            <div class="address__wrap">
+              <div class="address__elem-wrap">
+                <p class="address__label">Адрес:</p>
+                <p class="address__text">г. Омск, ул.&nbsp;60 лет&nbsp;Октября,&nbsp;7</p>
+              </div>
+              <div class="address__elem-line"></div>
+              <div class="address__elem-wrap address__elem-wrap_link">
+                <p class="address__label">Телефон:</p>
+                <a class="address__phone" href="tel:+88005555555">8-800-555-55-55</a>
+              </div>
+              <div class="address__elem-wrap">
+                <p class="address__label">График работы:</p>
+                <p class="address__text">Пн-Вс: с&nbsp;8:00&nbsp;до&nbsp;22:00</p>
+              </div>
+              <div class="address__elem-wrap address__elem-wrap_link">
+                <p class="address__label">Email:</p>
+                <a class="address__mail" href="mailto:article@auth.or">omsk@supergym.ru</a>
+              </div>
+            </div>
+          </address>
         </section>
 
 

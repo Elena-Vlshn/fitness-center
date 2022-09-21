@@ -2191,15 +2191,15 @@ button,
   }
 
   .header {
-    padding-top: 37px;
-    padding-bottom: 82px;
+    padding-top: 35px;
+    padding-bottom: 80px;
   }
 
   .header__phone {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    padding-top: 3px;
+    padding-top: 5px;
   }
 
   .header__social {
@@ -2292,7 +2292,7 @@ button,
   }
 
   .gym__subtitle {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   .gym__text {
@@ -2326,7 +2326,7 @@ button,
 
   .membership {
     padding-top: 102px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
     margin-bottom: 100px;
   }
 
@@ -2334,7 +2334,7 @@ button,
     width: 345px;
     height: 455px;
     right: -46px;
-    bottom: -232px;
+    bottom: -230px;
   }
 
   .membership__title {
@@ -2720,8 +2720,8 @@ button,
     padding: 0;
     -ms-grid-columns: 1fr 113px 177px;
     grid-template-columns: 1fr 113px 177px;
-    -ms-grid-rows: 44px 67px 84px 1fr;
-    grid-template-rows: 44px 67px 84px 1fr;
+    -ms-grid-rows: 42px 67px 84px 1fr;
+    grid-template-rows: 42px 67px 84px 1fr;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
@@ -2874,7 +2874,7 @@ button,
   }
 
   .membership__title {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .membership__tabs-list {

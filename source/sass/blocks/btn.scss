@@ -12,9 +12,16 @@
 
   cursor: pointer;
 
-  // transition: opacity $trans-default;
+  &:focus {
+    outline: 2px solid $color-background-red;
+  }
 
-  &_dark {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &--dark {
     color: $color-default-black;
   }
 

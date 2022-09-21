@@ -20,13 +20,14 @@
 
 .advantages__title {
   margin-bottom: 56px;
+  margin-top: 0;
 
   @include vp-1199 {
     margin-bottom: 41px;
   }
 
   @include vp-767 {
-    // margin-bottom: ;
+    margin-bottom: 44px;
   }
 }
 
@@ -54,14 +55,14 @@
 }
 
 .advantages__item {
-  &_line {
+  &--line {
     height: 9px;
     border-bottom: 2px solid $border-red;
     opacity: 0.2;
     margin: 70px 0;
   }
 
-  &_center {
+  &--center {
     margin-top: 6px;
     grid-column: 2/-3;
     grid-row: 1/4;
@@ -71,11 +72,11 @@
   }
 
   @include vp-1199 {
-    &_line {
+    &--line {
       display: none;
     }
 
-    &_center {
+    &--center {
       margin-top: 0;
       grid-column: 1/3;
       grid-row: 2/3;
@@ -83,7 +84,7 @@
   }
 
   @include vp-767 {
-    &_center {
+    &--center {
       grid-column: 1/2;
       grid-row: 3/4;
       width: 140%;
@@ -92,4 +93,3 @@
     }
   }
 }
-

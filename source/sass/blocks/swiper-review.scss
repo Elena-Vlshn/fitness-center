@@ -7,7 +7,7 @@
 }
 
 .swiper-button-prev {
-  &_review {
+  &--review {
     margin-left: 19.5%;
 
     @include vp-1199 {
@@ -21,7 +21,7 @@
 }
 
 .swiper-button-next {
-  &_review {
+  &--review {
     margin-right: 19.5%;
 
     @include vp-1199 {

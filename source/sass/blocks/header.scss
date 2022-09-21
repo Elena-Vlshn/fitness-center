@@ -1,36 +1,43 @@
 .header {
-  padding-top: 32px;
+  padding-top: 29px;
   padding-bottom: 50px;
   background: $conic-gradient;
 
   @include vp-1199 {
-    padding-top: 40px;
+    padding-top: 37px;
     padding-bottom: 82px;
   }
 
   @include vp-767 {
-    padding-top: 20px;
-    padding-bottom: 78px;
+    padding-top: 16px;
+    padding-bottom: 80px;
   }
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__phone {
   font-family: $ff-bebasneue;
   color: $color-default-white;
   font-size: 26px;
-  line-height: 20px;
+  line-height: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
   @include vp-1199 {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    padding-top: 3px;
   }
 
   @include vp-767 {
@@ -73,9 +80,15 @@
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  margin-top: -3px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
   @include vp-1199 {
-    padding-top: 18px;
+    padding-top: 22px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 28px;
@@ -83,7 +96,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding-top: 72px;
+    padding-top: 75px;
 
     img {
       display: none;
@@ -95,13 +108,13 @@
   justify-content: center;
   display: grid;
   grid-template-columns: 113px 236px;
-  grid-template-rows: 66px 200px 1fr;
+  grid-template-rows: 66px 100px 105px 1fr;
   column-gap: 28px;
   padding-left: 20px;
   padding-right: 64px;
   padding-top: 116px;
   color: $color-default-white;
-  padding-bottom: 45px;
+  padding-bottom: 42px;
 
   @include vp-1199 {
     padding-left: 0;
@@ -109,13 +122,13 @@
     padding-bottom: 24px;
     padding-top: 53px;
     grid-template-columns: 113px 183px;
-    grid-template-rows: 44px 152px 1fr;
+    grid-template-rows: 44px 75px 90px 1fr;
   }
 
   @include vp-767 {
     padding: 0;
     grid-template-columns: 1fr 113px 177px;
-    grid-template-rows: 44px 139px 1fr;
+    grid-template-rows: 44px 67px 84px 1fr;
     column-gap: 0;
   }
 }
@@ -154,7 +167,7 @@
   text-align: end;
   letter-spacing: 0.03em;
   grid-column: 1/3;
-  grid-row: 2/3;
+  grid-row: 2/4;
   justify-self: end;
 
   @include vp-1199 {
@@ -165,7 +178,6 @@
   @include vp-767 {
     font-size: 78px;
     line-height: 78px;
-    margin-bottom: 40px;
     grid-column: 2/4;
   }
 }
@@ -175,40 +187,34 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
   grid-column: 1/2;
-  grid-row: 2/3;
-  align-self: end;
-
-  @include vp-1199 {
-    padding-bottom: 0;
-  }
+  grid-row: 3/4;
+  align-self: center;
 
   @include vp-767 {
     grid-column: 2/3;
-    padding-bottom: 0;
-    margin-bottom: -4px;
   }
 }
 
 .header__button {
   width: 234px;
-  height: 57px;
+  height: 62px;
   grid-column: 1/3;
   justify-self: end;
   padding: 12px;
-  margin-top: 72px;
+  margin-top: 65px;
 
   @include vp-1199 {
     width: 186px;
     height: 60px;
-    margin-top: 58px;
+    margin-top: 45px;
   }
 
   @include vp-767 {
     width: 100%;
     grid-column: 1/-1;
     padding: 20px;
+    margin-top: 45px;
   }
 }
 

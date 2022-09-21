@@ -7,6 +7,7 @@
     left: 0;
     top: 0;
     position: absolute;
+    object-fit: cover;
   }
 
   @include vp-767 {
@@ -20,7 +21,7 @@
 
 .announcement__wrap-text {
   width: 43%;
-  padding: 78px 78px 80px;
+  padding: 76px 78px 80px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 88px 88px;
@@ -65,7 +66,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @include vp-1199 {
     font-size: 12px;
@@ -81,11 +82,15 @@
   grid-column: 1/-1;
   color: $color-default-white;
   border: 4px solid $color-default-white;
-  height: 70px;
-  padding: 16px;
+  padding: 25px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 700;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
   @include vp-1199 {
     font-size: 10px;

@@ -7,78 +7,75 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const tabButtons = document.querySelectorAll('.membership__button');
   const tabBodies = document.querySelectorAll('.membership__options-list');
+  const videoGym = document.querySelector('.gym__video');
+
+
+  function createIframe() {
+    let iframe = document.createElement('iframe');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1');
+    iframe.setAttribute('allow', 'autoplay');
+    iframe.setAttribute('allowfullscreen', '');
+    return iframe;
+  }
+
+  function setupVideo(video) {
+    const link = video.querySelector('a');
+    const playButton = video.querySelector('.gym__button-play');
+    video.addEventListener('click', () => {
+      let iframe = createIframe();
+      link.remove();
+      playButton.remove();
+      video.appendChild(iframe);
+    });
+
+    link.removeAttribute('href');
+  }
+
+  setupVideo(videoGym);
 
   function tabOpen(event) {
     const dataTabActiveName = event.target.dataset.tab;
     const bodyTabActive = document.querySelector(`ul[data-tab="${dataTabActiveName}"]`);
 
     for (let button of tabButtons) {
-      if (button.classList.contains('membership__button_active')) {
-        button.classList.remove('membership__button_active');
+      if (button.classList.contains('membership__button--active')) {
+        button.classList.remove('membership__button--active');
       }
       for (let tabBody of tabBodies) {
-        tabBody.classList.remove('membership__options-list_show');
+        tabBody.classList.remove('membership__options-list--show');
       }
     }
-    event.target.classList.add('membership__button_active');
-    bodyTabActive.classList.add('membership__options-list_show');
+    event.target.classList.add('membership__button--active');
+    bodyTabActive.classList.add('membership__options-list--show');
   }
+
+  // video.addEventListener('click', function () {
+  //   const link = video.querySelector('a');
+  //   const playButton = document.querySelector('.gym__button-play');
+  //   const iframe = createIframe();
+  //   link.removeAttribute('href');
+  //   link.remove();
+  //   playButton.remove();
+  //   video.appendChild(iframe);
+  // });
 
 
   for (let button of tabButtons) {
     button.addEventListener('click', tabOpen);
   }
 
-  const swiper2 = new Swiper('.swiper-review', {
-    // Optional parameters
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  function onCardClick(event) {
+    const trainersСard = event.target.closest('.trainers__card');
+    const info = trainersСard.querySelector('.trainers__card-info');
+    info.classList.toggle('trainers__card-inf--is-visible');
+  }
 
-  });
-
-  const swiper1 = new Swiper('.swiper', {
-    // Default parameters
-    slidesPerView: 4,
-    spaceBetween: 40,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      // when window width is >= 1200px
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  // const swiper = new Swiper('.swiper-review', {
-  //   loop: true,
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  // });
-
+  if (document.documentElement.clientWidth < 1200) {
+    const trainersImages = document.querySelectorAll('.trainer-image');
+    for (let image of trainersImages) {
+      image.addEventListener('click', onCardClick);
+    }
+  }
 
   // Utils
   // ---------------------------------

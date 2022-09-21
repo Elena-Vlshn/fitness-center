@@ -1,8 +1,9 @@
 .membership {
   background-color: $color-background-grey;
   padding-top: 120px;
-  padding-bottom: 240px;
+  padding-bottom: 120px;
   margin-top: 6px;
+  margin-bottom: 120px;
 
   img {
     position: absolute;
@@ -15,7 +16,8 @@
 
   @include vp-1199 {
     padding-top: 102px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
 
     img {
       width: 345px;
@@ -27,7 +29,8 @@
 
   @include vp-767 {
     padding-top: 68px;
-    padding-bottom: 140px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
 
     img {
       display: none;
@@ -44,6 +47,7 @@
 
 .membership__title {
   margin-bottom: 32px;
+  margin-top: 0;
 
   @include vp-1199 {
     margin-bottom: 26px;
@@ -103,7 +107,7 @@
   padding-right: 0;
   opacity: 0.5;
 
-  &_active {
+  &--active {
     border-bottom: 2px solid $border-red;
     opacity: 1;
   }
@@ -130,7 +134,7 @@
   padding: 0;
   z-index: 2;
 
-  &_show {
+  &--show {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
@@ -147,4 +151,3 @@
     row-gap: 34px;
   }
 }
-

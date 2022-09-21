@@ -1,5 +1,5 @@
 .trainers {
-  padding-top: 122px;
+  padding-top: 120px;
   padding-bottom: 120px;
 
   @include vp-1199 {
@@ -34,16 +34,23 @@
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+
+  &--is-visible {
+    z-index: 2;
+  }
 }
 
 .trainers__card:hover .trainers__card-info {
   z-index: 2;
+
+  @include vp-1199 {
+    z-index: -1;
+  }
 }
 
 .trainers__card:focus-within .trainers__card-info {
   z-index: 2;
 }
-

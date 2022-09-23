@@ -78,39 +78,41 @@
             с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов
             групповых занятий. </p>
         </div>
-        <div class="gym__image-wrap">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
-            <!-- 1х: 660px; 2x: 1320px -->
-            <img width="660" height="401" src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x"
-              alt="Тренажерный зал.">
-          </picture>
-        </div>
-
-        <div class="gym__video">
-          <a href="https://www.youtube.com/embed/9TZXsZItgdw" tabindex="-1">
+        <div class="gym__visual-wrap">
+          <div class="gym__image-wrap">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/video-cover-mobile@1x.webp 1x, img/video-cover-mobile@2x.webp 2x">
+                srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/video-cover-tablet@1x.webp 1x, img/video-cover-tablet@2x.webp 2x">
+                srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/video-cover-desktop@1x.webp 1x, img/video-cover-desktop@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <img width="364" height="228" src="img/video-cover-desktop@1x.jpg"
-                srcset="img/video-cover-desktop@2x.jpg 2x" alt="обложка видео.">
+                srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
+              <!-- 1х: 660px; 2x: 1320px -->
+              <img width="660" height="401" src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x"
+                alt="Тренажерный зал.">
             </picture>
-          </a>
-          <button class="gym__button-play" aria-label="запустить видео">
-            <!-- 1х: 100px; 2x: 200px -->
-            <img src="img/play.png" width="100" height="100" alt="запустить видео">
-          </button>
-        </div>
+          </div>
+
+          <div class="gym__video">
+            <a href="https://www.youtube.com/embed/9TZXsZItgdw" tabindex="-1">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/video-cover-mobile@1x.webp 1x, img/video-cover-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/video-cover-tablet@1x.webp 1x, img/video-cover-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/video-cover-desktop@1x.webp 1x, img/video-cover-desktop@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <img width="364" height="228" src="img/video-cover-desktop@1x.jpg"
+                  srcset="img/video-cover-desktop@2x.jpg 2x" alt="обложка видео.">
+              </picture>
+            </a>
+            <button class="gym__button-play" aria-label="запустить видео">
+              <!-- 1х: 100px; 2x: 200px -->
+              <img src="img/play.png" width="100" height="100" alt="запустить видео">
+            </button>
+          </div>
+      </div>
       </section>
       <section class="membership" id="membership">
         <div class="membership__inner container">
@@ -551,8 +553,7 @@
                       srcset="img/reviews-1-desktop@2x.jpg 2x" alt="фотография автора отзыва." loading="lazy">
                   </picture>
                   <h2>Анна Орлова</h2>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
-                    персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </article>
               </div>
               <div class="swiper-slide reviews__card">
@@ -567,8 +568,22 @@
                       srcset="img/reviews-1-desktop@2x.jpg 2x" alt="фотография автора отзыва." loading="lazy">
                   </picture>
                   <h2>Анна Орлова</h2>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
-                    персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный»</p>
+                </article>
+              </div>
+              <div class="swiper-slide reviews__card">
+                <article class="review">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/reviews-1-mobile@1x.webp 1x, img/reviews-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/reviews-1-desktop@1x.webp 1x, img/reviews-1-desktop@2x.webp 2x">
+                    <!-- 1х: 80px; 2x: 160px -->
+                    <img width="80" height="80" src="img/reviews-1-desktop@1x.jpg"
+                      srcset="img/reviews-1-desktop@2x.jpg 2x" alt="фотография автора отзыва." loading="lazy">
+                  </picture>
+                  <h2>Анна Орлова</h2>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют»</p>
                 </article>
               </div>
             </div>

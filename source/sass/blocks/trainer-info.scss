@@ -1,11 +1,11 @@
 .trainer-info {
+  height: 294px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   overflow: auto;
   background-color: $color-background-blue-opacity;
-  padding: 51px 13% 54px;
+  padding: 20% 13% 20%;
   color: $color-default-white;
 
   h3 {

@@ -9,16 +9,21 @@
 }
 
 .swiper-review-container {
+  display: flex;
   position: relative;
   width: 100%;
   max-width: 1366px;
   overflow: hidden;
+
+  @include vp-1199 {
+    max-width: 680px;
+  }
 }
 
 .swiper-review-button-prev {
   width: 16px;
   height: 32px;
-  background-image: url("../../img/svg/button-prev.svg");
+  background-image: url("../img/svg/button-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -33,7 +38,7 @@
   }
 
   @include vp-1199 {
-    left: 6%;
+    left: 0;
   }
 
   @include vp-767 {
@@ -45,7 +50,7 @@
 .swiper-review-button-next {
   width: 16px;
   height: 32px;
-  background-image: url("../../img/svg/button-next.svg");
+  background-image: url("../img/svg/button-next.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -60,7 +65,7 @@
   }
 
   @include vp-1199 {
-    right: 6%;
+    right: 0;
   }
 
   @include vp-767 {

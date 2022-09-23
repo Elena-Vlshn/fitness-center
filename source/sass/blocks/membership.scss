@@ -4,11 +4,12 @@
   padding-bottom: 120px;
   margin-top: 6px;
   margin-bottom: 120px;
+  position: relative;
 
   img {
     position: absolute;
-    right: -9%;
-    bottom: -270px;
+    right: 0;
+    bottom: -150px;
     width: 287px;
     height: 492px;
     object-fit: contain;
@@ -22,8 +23,7 @@
     img {
       width: 345px;
       height: 455px;
-      right: -46px;
-      bottom: -230px;
+      bottom: -130px;
     }
   }
 
@@ -42,7 +42,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .membership__title {
@@ -137,13 +136,12 @@
   &--show {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
+    gap: 40px;
   }
 
   @include vp-1199 {
     width: 65%;
     grid-template-columns: 1fr;
-    row-gap: 40px;
   }
 
   @include vp-767 {
@@ -151,3 +149,7 @@
     row-gap: 34px;
   }
 }
+
+// .membership__options-item {
+//   margin-bottom: 40px;
+// }

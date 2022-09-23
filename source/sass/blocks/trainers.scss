@@ -28,6 +28,10 @@
 
 .trainers__card {
   position: relative;
+
+  @include vp-1199 {
+    height: auto;
+  }
 }
 
 .trainers__card-info {
@@ -35,11 +39,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
 
   &--is-visible {
     z-index: 2;
+  }
+
+  @include vp-1199 {
+    height: 100%;
   }
 }
 

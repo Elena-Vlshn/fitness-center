@@ -16,6 +16,7 @@
     padding-bottom: 4px;
     padding-top: 4px;
     width: 100%;
+    color: $color-default-white;
 
     &::placeholder {
       color: $color-default-white;
@@ -48,6 +49,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 16px;
+    cursor: pointer;
 
     &:hover,
     &:focus {

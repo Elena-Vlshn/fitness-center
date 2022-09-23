@@ -12,9 +12,14 @@
 }
 
 .swiper-container {
+  height: 294px;
   position: relative;
   max-width: 1366px;
   margin: 0 auto;
+
+  @include vp-1199 {
+    height: auto;
+  }
 }
 
 .swiper-button-prev {
@@ -23,7 +28,7 @@
   position: absolute;
   top: 50%;
   left: 3.5%;
-  background-image: url("../../img/svg/button-prev.svg");
+  background-image: url("../img/svg/button-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: translateY(-50%);
@@ -49,7 +54,7 @@
   position: absolute;
   top: 50%;
   right: 3.5%;
-  background-image: url("../../img/svg/button-next.svg");
+  background-image: url("../img/svg/button-next.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: translateY(-50%);

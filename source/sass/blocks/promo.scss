@@ -41,7 +41,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 211px 211px;
+  grid-template-rows: repeat(2, minmax(211px, auto));
   column-gap: 40px;
   row-gap: 40px;
 

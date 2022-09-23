@@ -1,11 +1,9 @@
 .gym {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 0;
   display: grid;
   grid-template-columns: 2fr 3fr;
   column-gap: 60px;
-  margin-bottom: 5px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
@@ -24,7 +22,7 @@
   flex-direction: column;
   padding-left: 60px;
   padding-right: 25px;
-  grid-row: 1/3;
+  padding-bottom: 25px;
   align-self: start;
 
   @include vp-1199 {
@@ -95,6 +93,16 @@
   }
 }
 
+.gym__visual-wrap {
+  position: relative;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .gym__image-wrap {
   position: relative;
   width: 100%;
@@ -122,10 +130,8 @@
   width: 364px;
   height: 0;
   padding-bottom: 34.5%;
-  grid-column: 2/3;
   transform: translate(-63px, -115px);
   position: relative;
-  justify-self: start;
 
   a {
     &::before {
@@ -161,9 +167,7 @@
   }
 
   @include vp-1199 {
-    grid-column: 1/-1;
     transform: translate(0, -50%);
-    justify-self: center;
     width: 39%;
     padding-bottom: 25%;
   }

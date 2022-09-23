@@ -40,11 +40,12 @@
 }
 
 .footer__nav-list {
+  max-width: 60%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: start;
   margin: 0;
   padding: 0;
   padding-left: 28px;
@@ -65,6 +66,8 @@
 }
 
 .footer__nav-item {
+  padding-bottom: 4px;
+
   &:not(:last-child) {
     margin-right: 40px;
   }

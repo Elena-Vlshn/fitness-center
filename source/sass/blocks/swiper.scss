@@ -18,51 +18,53 @@
 }
 
 .swiper-button-prev {
+  height: 32px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  left: 3.5%;
   background-image: url("../../img/svg/button-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 32px;
-  margin-left: 2%;
-
-  &::after {
-    display: none;
-  }
+  transform: translateY(-50%);
+  cursor: pointer;
 
   &:hover {
-    background-color: $color-focus-outline;
+    outline: 1px solid $color-focus-outline;
   }
 
   @include vp-1199 {
-    margin-left: 4%;
+    left: 6%;
   }
 
   @include vp-767 {
     background-size: 10px 19px;
-    margin-left: -3px;
+    left: 4%;
   }
 }
 
 .swiper-button-next {
+  height: 32px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
   background-image: url("../../img/svg/button-next.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 32px;
-  margin-right: 2%;
-
-  &::after {
-    display: none;
-  }
+  transform: translateY(-50%);
+  cursor: pointer;
 
   &:hover {
-    background-color: $color-focus-outline;
+    outline: 1px solid $color-focus-outline;
   }
 
   @include vp-1199 {
-    margin-right: 4%;
+    right: 6%;
   }
 
   @include vp-767 {
     background-size: 10px 19px;
-    margin-right: -3px;
+    right: 4%;
   }
 }

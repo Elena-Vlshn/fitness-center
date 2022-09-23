@@ -50,6 +50,21 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   const sliderReview = new Swiper('.swiper-review', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-review-button-next',
+      prevEl: '.swiper-review-button-prev',
+    },
+
+  });
+
+  const slider1 = new Swiper('.swiper1', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     // Optional parameters
     loop: true,
     // Navigation arrows
@@ -57,7 +72,6 @@ window.addEventListener('DOMContentLoaded', () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
   });
 
   const sliderTrainer = new Swiper('.swiper', {

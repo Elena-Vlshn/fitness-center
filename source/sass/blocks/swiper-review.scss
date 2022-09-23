@@ -1,35 +1,70 @@
-
-.swiper-review-container {
-  position: relative;
-  margin: 0 auto;
+.swiper-review {
+  width: 85%;
   max-width: 1160px;
-  overflow: hidden;
-}
+  margin: 0 auto;
 
-.swiper-button-prev {
-  &--review {
-    margin-left: 19.5%;
-
-    @include vp-1199 {
-      margin-left: 4%;
-    }
-
-    @include vp-767 {
-      margin-left: -1%;
-    }
+  @include vp-1199 {
+    width: 100%;
   }
 }
 
-.swiper-button-next {
-  &--review {
-    margin-right: 19.5%;
+.swiper-review-container {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  overflow: hidden;
+}
 
-    @include vp-1199 {
-      margin-right: 4%;
-    }
+.swiper-review-button-prev {
+  width: 16px;
+  height: 32px;
+  background-image: url("../../img/svg/button-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: calc(40% - 200px);
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
 
-    @include vp-767 {
-      margin-right: -1%;
-    }
+  &:hover {
+    outline: 1px solid $color-focus-outline;
+  }
+
+  @include vp-1199 {
+    left: 6%;
+  }
+
+  @include vp-767 {
+    left: 3.5%;
+    background-size: 10px 19px;
+  }
+}
+
+.swiper-review-button-next {
+  width: 16px;
+  height: 32px;
+  background-image: url("../../img/svg/button-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: calc(40% - 200px);
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    outline: 1px solid $color-focus-outline;
+  }
+
+  @include vp-1199 {
+    right: 6%;
+  }
+
+  @include vp-767 {
+    background-size: 10px 19px;
+    right: 3.5%;
   }
 }

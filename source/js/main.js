@@ -52,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const sliderReview = new Swiper('.swiper-review', {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    loop: true,
     navigation: {
       nextEl: '.swiper-review-button-next',
       prevEl: '.swiper-review-button-prev',
